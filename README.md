@@ -93,7 +93,7 @@ Some functions do not return a value and simply perform actions, while others re
 
 ## Print Function
 
-- Most common function you'll use outputs text to the console 
+- Most common function you'll use outputs text to the console
 print(*objects, sep = ' ', end = '\n', file= sys.stdout, flush = false)
 - Objects: You can pass one or more objects to the function to be printed, separated by commas. The objects can be of any data type.
 - Sep: The separator used to separate the objects in the output. By default, iti s a space ('')
@@ -106,10 +106,24 @@ print("Hello World!")
 - Printing multiple values:
 print("I am", 25, "years old.")
 #output: I am 12 years old.
-- Multiple values seperated by commas:
+- Multiple values separated by commas:
 print("apples", "oranges", "bananas", sep = ",")
 #output: apples, oranges, bananas
 
-## Print with F- Strings
+## Print with F-Strings
+
+- An f-string, or formatted string, allows us to create dynamic strings easily by embedding expressions in them
+<br Not limited to printing, but used in many cases. />
+"""
+
+"""
+
+## Variables
+
+- A variable is named reference to a value or an object.
+- Variables are used to store data in computer memory so that it can be referenced and used later in a program.
+Aka: a container of data with a label on it
+
+- A dynamically-typed language (like Python) determines the data type of a variable at runtime based on the value it is assigned.
 
 [EOF]
