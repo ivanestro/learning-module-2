@@ -1,5 +1,13 @@
 ### Learning Module 2
 
+## Description
+
+Introduction to Python: Documentation, Variables, Printing 
+
+## Author
+
+Ivan Estropigan
+
 ## What is Software Development?
 
 - Computer Programming
