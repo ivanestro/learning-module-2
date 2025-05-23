@@ -2,7 +2,7 @@
 
 ## Description
 
-Introduction to Python: Documentation, Variables, Printing 
+Introduction to Python: Documentation, Variables, Printing
 
 ## Author
 
@@ -64,12 +64,52 @@ As the course progresses, additional docstring will be created to document funct
 Standard is to put them at the start of the module, function, or program that is documented.
 - Comments are similar but are found mixed with the code to explain it to the reader.
 - Documentation is like the text on the back of a book or movie case, comments are like the commentary of footnotes inside.
-    # This is a single line comment.
+    #This is a single line comment.
     """
     This is a multi-line comment.
     It can span multiple lines.
     """
+
 ## Functions
 
+- Functions will have an entire module dedicated to them.
+Here's a teaser for now example - Hello World.
+- Functions are pieces of code that are written so that they can be invoked as a single line.
+Who here knows how to tie their shoes?
+- Function in Python are named using lowercase letters
+If the function contains more than one word in the name, the lowercase words will be separated by underscores.
+- Functions may receive one or more arguments, which are input values that are passed to the function.
+These Parameters are defined within parentheses following the function name.
+Since Python is a dynamically typed language, the datatype of the argument is not enforced, but passing data of the of the wrong typed could lead to unexpected results.
+- Functions are pieces of code that are written so that they can be invoked as a single line
+Who here knows how to tie their shoes?
+- Functions in Python are named using lowercase letters
+If the function contains more than one word in the name, the lowercase words will be separated by underscores.
+- Functions may receive one or more argument, which are input values that are passed to the function.
+These parameters are defined within the parentheses following the function name.
+Python is dynamically typed, the datatype is not enforced, but passed data of the wrong type could lead to unexpected results.
+- The return value is the output value that is returned by the function when it completes its task.
+Some functions do not return a value and simply perform actions, while others return one or more values.
+
+## Print Function
+
+- Most common function you'll use outputs text to the console 
+print(*objects, sep = ' ', end = '\n', file= sys.stdout, flush = false)
+- Objects: You can pass one or more objects to the function to be printed, separated by commas. The objects can be of any data type.
+- Sep: The separator used to separate the objects in the output. By default, iti s a space ('')
+- End: The string appended at the end of the output. By default, it is a newline character ("\n"), so each print() call will output on a new line.
+- File: The file object where output is sent. By default, it is set to sys.stdout, the console. The output can be redirected to a file by specifying a file object (More on File Output in a later module).
+- Flush: A boolean flag that specifies wether to flush the output buffer after printing. By default, it is set to False, so the output buffer is not immediately flushed.
+- Printing a single value:
+print("Hello World!")
+#output: Hello World!
+- Printing multiple values:
+print("I am", 25, "years old.")
+#output: I am 12 years old.
+- Multiple values seperated by commas:
+print("apples", "oranges", "bananas", sep = ",")
+#output: apples, oranges, bananas
+
+## Print with F- Strings
 
 [EOF]
