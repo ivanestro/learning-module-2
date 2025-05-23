@@ -50,4 +50,26 @@ Whitespace in Expressions and Statements
 Comments
 Naming Conventions
 
+## Documentation
+
+- Documentation in Python refers to the written information, guides, and examples that explain how to use particular module, function or program.
+- DOCstring (""" """) are inline documentation that describes the purpose and usage of a Python function or class.
+They are typically enclosed in triple quotes and placed at the beginning of the function or class.
+In Software Development Fundamentals, a docstring similar to the one shown in the previous slide will be included at the top of every file created.
+As the course progresses, additional docstring will be created to document functions, classes and methods.
+
+## Documentation vs Commenting
+
+- Documentation in Python refers to the written information, guides, and examples that explain how to use a particular module, function or program
+Standard is to put them at the start of the module, function, or program that is documented.
+- Comments are similar but are found mixed with the code to explain it to the reader.
+- Documentation is like the text on the back of a book or movie case, comments are like the commentary of footnotes inside.
+    # This is a single line comment.
+    """
+    This is a multi-line comment.
+    It can span multiple lines.
+    """
+## Functions
+
+
 [EOF]
