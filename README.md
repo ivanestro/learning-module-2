@@ -126,4 +126,28 @@ Aka: a container of data with a label on it
 
 - A dynamically-typed language (like Python) determines the data type of a variable at runtime based on the value it is assigned.
 
+## Simple Data Types
+
+- Numeric data types are used to represent numbers. In python, there are three data types: 
+- int(integer): whole numbers, no decimal points
+- float(floating-point number): decimal points and can use exponents, think scientific notation.
+- complex(complex number): not used in this course. 
+- text: data types are used to represent strings of characters.
+- boolean: in python the bool (Boolean) data types are used to represent truth values True or False.
+
+## Type Conversions
+
+- Type conversion (also known as type casting or data type conversion) refers to the process of converting a value from one data type to another.
+This is often necessary when the type of data being used is not compatible with the operation or function being performed on it.
+For example, if you have a string containing a number, you may need to convert it ot an integer or a float to perform mathematical operations on it. 
+- Type conversion can be implicit or explicit.
+Implicit type conversion, also known as type coercion, occurs when the programming language automatically converts one data type to another without the need for explicit instructions from the programmer. 
+Type conversios are temporary unless used in conjuction with an assignment operator.
+
+## Constants 
+
+- In python, as opposed to most other program language, there is no built in concept of a "constant"
+- A constant typically defined as a variable whose value remains the same throughout the program and should not be modifed. 
+Most other programming langauge will enforce this and ensure constands are not modified.
+- In Python, we can instead denote values that should constant by using an uppercase name for the variable and not modifying its value once it has been set. 
 [EOF]
