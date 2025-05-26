@@ -150,4 +150,40 @@ Type conversios are temporary unless used in conjuction with an assignment opera
 - A constant typically defined as a variable whose value remains the same throughout the program and should not be modifed. 
 Most other programming langauge will enforce this and ensure constands are not modified.
 - In Python, we can instead denote values that should constant by using an uppercase name for the variable and not modifying its value once it has been set. 
+
+## Standard Operators
+
+- Here are some of the common operators in Python: 
+- "=" Assignment to set the value of a variable
+- "+" Addition to sum two numbers, also used with text Strings for concatenation (combining text together)
+- "-" Subtraction to get the difference of two numbers
+- "*" Multiplication to get the product of two numbers
+- "/" Division to get the quotient of two numbers, with decimal
+- "//" Floor division to get the quotient of two numbers, with no decimal (aka: integer division)
+- "%" Modulus to get the remainder of the division of two numbers
+- "**" Exponentiation to get the results of the first number to the power of the second.
+
+- "/" result = 42/ 4 result = 10.5
+- "//" Floor Division result = 42 // 4 result = 10
+- "%" Modulus to get the remainder of the division of two numbers result = 100 % 55 result = 45
+- "**" Exponentiation to get the result of the first number to the power of the second result 2 ** 4 result = 16
+- "+=" Combines addition and assignment into a single operator age += 1 same as : age = age + 1
+- "-=" Combines subtraction and assignment into a single operator. count -= 1 same as: count = count - 1
+- "*=" Combines multiplcation and assignment into a single operator factor * = 10 same as: factor = factor * 10
+- "/=" Combines division and assignment into a single operator half /= 2 same as: half = half / 2 
+- "//=" Combines floor division andassignment into a single operator third // = 3 same as third = third // 3
+- "%=" Combines modulus and assignment into a single operator remainder %= 2 same as: remainder = remainder % 2 
+- "**" Combines exponentation and assignment into a single operator power ** = 3 same as: power = power = ** 3
+
+## Order of Operations
+
+- The order of operation rules in Python dictate the order in which the arithmetic operations are evaluated. 
+- These rules are similar to the rules of arithemtic you are familar with (PEDMAS)
+- Parentheses: expressions within parentheses are evaluated first
+- Exponentiation: expressions with Exponentiation are evaluated second
+- Division, Multiplication and Modulus: these operations are evaluated third if there are multiple items of this category, they are executed from left to right
+- Addition and Subtraction: these operations are evaluated last if there are multiple items of this category, they are executed from left to right. 
+- result = ((10 + 5) * 2) / 3 result = 10.0
+- versus: result = 10 + 5 * 2 / 3 result = 13.3^ 
+- Assignment to variables is the final step 
 [EOF]
