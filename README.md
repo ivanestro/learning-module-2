@@ -186,4 +186,81 @@ Most other programming langauge will enforce this and ensure constands are not m
 - result = ((10 + 5) * 2) / 3 result = 10.0
 - versus: result = 10 + 5 * 2 / 3 result = 13.3^ 
 - Assignment to variables is the final step 
+
+## Python Collection Types 
+
+- A collection is an object that contains multiple elements or items of data 
+Think a box of eggs or a car parking lot
+- There are four main types of built-in collections in Python:
+- Lists: A list is an order (But not necessarily sorted) collection of elements, and it is mutable (can be modified.)
+- Tuples: a tuple is an ordered collection of elements, similar to a list, but it is immutable (cannot be modified.)
+- Dictionaries: A dictionary is an unordered collection of key-value paris, and it is mutable.
+- Sets: A set is an unordered colletion of unique elements and it is mutable.
+
+## Lists 
+
+- A list is a built in data structure used to store a collection of items, which can be of different data types. 
+- Lists are defined by enclosing a comma-seperated sequence of values in square brackets.
+
+## Lists - append()
+
+- As the name implies, append() adds to the end of a list 
+- Note that this is a method that belongs to the list class and therefore uses dot notation (in contrast to functions like print, type and abs)
+
+## Lists - insert()
+
+- As the name implies, inser() adds to a given location in a list
+- Note that this is a method that belongs to the list class and therefore uses dot notation (In contrast to functions like print, type and abs)
+
+## Lists - remove()
+
+- As the name implies, remove() deletes a specific items from a list
+- Note that this is a method that belongs to the list class and therefore uses dot notation (in contrast to functions like print, type, and abs)
+
+## Lists - pop()
+
+- Like removing a bottle cap or lid, pop() removes (and returns) the last item from the list
+- Note that this is a method that belongs to the list class and therefore uses dot notation (in contrast to functions like print, type, and abs)
+
+## Lists - index()
+
+- Like the index at the end of a book, index() tells us the location of an item in the list 
+- Note that this is a method that belongs to the list class and therefore uses dot notation (in contrast to functions like print, type and abs)
+
+## List - count()
+
+- Like a muppet, count() tells us how many items of a certain value there are in the list
+- Note that this is a method that belongs to the list class and therefore uses dot notation (in contrast to functions like print, type and abs)
+
+
+## List - sort()
+
+- Like organizing a set of playing cards, sort() puts the items in the list in a specific order
+- Note that this is a method that belongs to the list clas and therefore uses dot notation (in contrast to functions like print, type and abs)
+
+
+## List - reverse()
+- Flip everything around, reverse() puts the items in the list in the opposite order
+- Note that this is a method that belongs to the list class and therefore uses dot notation (in contrast to functions like print. type and abs)
+
+## Slicing
+- Slicing is a way to extract a subset of elements from a sequence object (such as a string, list, or tuple) by specifying a range of indices. 
+- start is the index of the first element to be included in the slice (inclusive). If the start value is excluded the beginning of the list (position 0) is assumed.
+- stop is the index of the last element to be included in the slice (exclusive). If the stop value is excluded the end of the list is assumed 
+- step is the stride or interval between elements in the slice. If the step value is excluded, the default step value is 1. 
+-Megative values can also be used when slicing. The value of -1 is equivalent to the last item in the list, -2 is the second lsat item and so on.
+- Slicing is a way to extract a subset of elements from a sequence object (such as a string list, or tuple) by specifying a range of indices.
+
+## Tuples 
+
+- A tuple is an ordered, immutable sequence of elements. 
+- Tuples are similar to lists, but once a tuple is created, its contents cannot be changed. 
+- This means that you an use a tuple to store a collection of values that should not be modified during the lifetime of a program.
+- When defining a tuole, its elements are enclosed in parentheses are seperated by commas.
+- If a tuple contains only a single element, that element must be followed by a comma. 
+- While tuples cannot be changed once created, new tuples can be created or an existing tuple can have its values re-assigned using the assignment operator.
+- When defining a tuple, its element are enclosed in optional parentheses and seperated by commas.
+- If a tuple contains only a single element, that element must be followed by a comma.
+- Tuples are similar to lists, but once a tuple is created its contents cannot be changed.
+- While tuples cannot be changed ojnce created, new tuples can be created or an existing tuple can have its value re-assigned using the assignment operator. Effectively completely replacing the tuple.
 [EOF]
