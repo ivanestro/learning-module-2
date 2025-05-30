@@ -144,12 +144,12 @@ For example, if you have a string containing a number, you may need to convert i
 Implicit type conversion, also known as type coercion, occurs when the programming language automatically converts one data type to another without the need for explicit instructions from the programmer. 
 Type conversios are temporary unless used in conjuction with an assignment operator.
 
-## Constants 
+## Constants
 
 - In python, as opposed to most other program language, there is no built in concept of a "constant"
 - A constant typically defined as a variable whose value remains the same throughout the program and should not be modifed. 
 Most other programming langauge will enforce this and ensure constands are not modified.
-- In Python, we can instead denote values that should constant by using an uppercase name for the variable and not modifying its value once it has been set. 
+- In Python, we can instead denote values that should constant by using an uppercase name for the variable and not modifying its value once it has been set.
 
 ## Standard Operators
 

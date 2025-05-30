@@ -1,5 +1,8 @@
 # Windows
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4b9d08e92c2f31485142a25d929f93820f067245
 Thumbs.db
 Desktop.ini
 
@@ -8,6 +11,11 @@ Desktop.ini
 *.pyo
 __pycache__/
 
+<<<<<<< HEAD
 ## Visual Studio Code
 
 .vscode/
+=======
+# Visual Studio Code
+.vscode/
+>>>>>>> 4b9d08e92c2f31485142a25d929f93820f067245
