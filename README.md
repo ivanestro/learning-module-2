@@ -126,4 +126,141 @@ Aka: a container of data with a label on it
 
 - A dynamically-typed language (like Python) determines the data type of a variable at runtime based on the value it is assigned.
 
+## Simple Data Types
+
+- Numeric data types are used to represent numbers. In python, there are three data types: 
+- int(integer): whole numbers, no decimal points
+- float(floating-point number): decimal points and can use exponents, think scientific notation.
+- complex(complex number): not used in this course. 
+- text: data types are used to represent strings of characters.
+- boolean: in python the bool (Boolean) data types are used to represent truth values True or False.
+
+## Type Conversions
+
+- Type conversion (also known as type casting or data type conversion) refers to the process of converting a value from one data type to another.
+This is often necessary when the type of data being used is not compatible with the operation or function being performed on it.
+For example, if you have a string containing a number, you may need to convert it ot an integer or a float to perform mathematical operations on it. 
+- Type conversion can be implicit or explicit.
+Implicit type conversion, also known as type coercion, occurs when the programming language automatically converts one data type to another without the need for explicit instructions from the programmer. 
+Type conversios are temporary unless used in conjuction with an assignment operator.
+
+## Constants 
+
+- In python, as opposed to most other program language, there is no built in concept of a "constant"
+- A constant typically defined as a variable whose value remains the same throughout the program and should not be modifed. 
+Most other programming langauge will enforce this and ensure constands are not modified.
+- In Python, we can instead denote values that should constant by using an uppercase name for the variable and not modifying its value once it has been set. 
+
+## Standard Operators
+
+- Here are some of the common operators in Python: 
+- "=" Assignment to set the value of a variable
+- "+" Addition to sum two numbers, also used with text Strings for concatenation (combining text together)
+- "-" Subtraction to get the difference of two numbers
+- "*" Multiplication to get the product of two numbers
+- "/" Division to get the quotient of two numbers, with decimal
+- "//" Floor division to get the quotient of two numbers, with no decimal (aka: integer division)
+- "%" Modulus to get the remainder of the division of two numbers
+- "**" Exponentiation to get the results of the first number to the power of the second.
+
+- "/" result = 42/ 4 result = 10.5
+- "//" Floor Division result = 42 // 4 result = 10
+- "%" Modulus to get the remainder of the division of two numbers result = 100 % 55 result = 45
+- "**" Exponentiation to get the result of the first number to the power of the second result 2 ** 4 result = 16
+- "+=" Combines addition and assignment into a single operator age += 1 same as : age = age + 1
+- "-=" Combines subtraction and assignment into a single operator. count -= 1 same as: count = count - 1
+- "*=" Combines multiplcation and assignment into a single operator factor * = 10 same as: factor = factor * 10
+- "/=" Combines division and assignment into a single operator half /= 2 same as: half = half / 2 
+- "//=" Combines floor division andassignment into a single operator third // = 3 same as third = third // 3
+- "%=" Combines modulus and assignment into a single operator remainder %= 2 same as: remainder = remainder % 2 
+- "**" Combines exponentation and assignment into a single operator power ** = 3 same as: power = power = ** 3
+
+## Order of Operations
+
+- The order of operation rules in Python dictate the order in which the arithmetic operations are evaluated. 
+- These rules are similar to the rules of arithemtic you are familar with (PEDMAS)
+- Parentheses: expressions within parentheses are evaluated first
+- Exponentiation: expressions with Exponentiation are evaluated second
+- Division, Multiplication and Modulus: these operations are evaluated third if there are multiple items of this category, they are executed from left to right
+- Addition and Subtraction: these operations are evaluated last if there are multiple items of this category, they are executed from left to right. 
+- result = ((10 + 5) * 2) / 3 result = 10.0
+- versus: result = 10 + 5 * 2 / 3 result = 13.3^ 
+- Assignment to variables is the final step 
+
+## Python Collection Types 
+
+- A collection is an object that contains multiple elements or items of data 
+Think a box of eggs or a car parking lot
+- There are four main types of built-in collections in Python:
+- Lists: A list is an order (But not necessarily sorted) collection of elements, and it is mutable (can be modified.)
+- Tuples: a tuple is an ordered collection of elements, similar to a list, but it is immutable (cannot be modified.)
+- Dictionaries: A dictionary is an unordered collection of key-value paris, and it is mutable.
+- Sets: A set is an unordered colletion of unique elements and it is mutable.
+
+## Lists 
+
+- A list is a built in data structure used to store a collection of items, which can be of different data types. 
+- Lists are defined by enclosing a comma-seperated sequence of values in square brackets.
+
+## Lists - append()
+
+- As the name implies, append() adds to the end of a list 
+- Note that this is a method that belongs to the list class and therefore uses dot notation (in contrast to functions like print, type and abs)
+
+## Lists - insert()
+
+- As the name implies, inser() adds to a given location in a list
+- Note that this is a method that belongs to the list class and therefore uses dot notation (In contrast to functions like print, type and abs)
+
+## Lists - remove()
+
+- As the name implies, remove() deletes a specific items from a list
+- Note that this is a method that belongs to the list class and therefore uses dot notation (in contrast to functions like print, type, and abs)
+
+## Lists - pop()
+
+- Like removing a bottle cap or lid, pop() removes (and returns) the last item from the list
+- Note that this is a method that belongs to the list class and therefore uses dot notation (in contrast to functions like print, type, and abs)
+
+## Lists - index()
+
+- Like the index at the end of a book, index() tells us the location of an item in the list 
+- Note that this is a method that belongs to the list class and therefore uses dot notation (in contrast to functions like print, type and abs)
+
+## List - count()
+
+- Like a muppet, count() tells us how many items of a certain value there are in the list
+- Note that this is a method that belongs to the list class and therefore uses dot notation (in contrast to functions like print, type and abs)
+
+
+## List - sort()
+
+- Like organizing a set of playing cards, sort() puts the items in the list in a specific order
+- Note that this is a method that belongs to the list clas and therefore uses dot notation (in contrast to functions like print, type and abs)
+
+
+## List - reverse()
+- Flip everything around, reverse() puts the items in the list in the opposite order
+- Note that this is a method that belongs to the list class and therefore uses dot notation (in contrast to functions like print. type and abs)
+
+## Slicing
+- Slicing is a way to extract a subset of elements from a sequence object (such as a string, list, or tuple) by specifying a range of indices. 
+- start is the index of the first element to be included in the slice (inclusive). If the start value is excluded the beginning of the list (position 0) is assumed.
+- stop is the index of the last element to be included in the slice (exclusive). If the stop value is excluded the end of the list is assumed 
+- step is the stride or interval between elements in the slice. If the step value is excluded, the default step value is 1. 
+-Megative values can also be used when slicing. The value of -1 is equivalent to the last item in the list, -2 is the second lsat item and so on.
+- Slicing is a way to extract a subset of elements from a sequence object (such as a string list, or tuple) by specifying a range of indices.
+
+## Tuples 
+
+- A tuple is an ordered, immutable sequence of elements. 
+- Tuples are similar to lists, but once a tuple is created, its contents cannot be changed. 
+- This means that you an use a tuple to store a collection of values that should not be modified during the lifetime of a program.
+- When defining a tuole, its elements are enclosed in parentheses are seperated by commas.
+- If a tuple contains only a single element, that element must be followed by a comma. 
+- While tuples cannot be changed once created, new tuples can be created or an existing tuple can have its values re-assigned using the assignment operator.
+- When defining a tuple, its element are enclosed in optional parentheses and seperated by commas.
+- If a tuple contains only a single element, that element must be followed by a comma.
+- Tuples are similar to lists, but once a tuple is created its contents cannot be changed.
+- While tuples cannot be changed ojnce created, new tuples can be created or an existing tuple can have its value re-assigned using the assignment operator. Effectively completely replacing the tuple.
 [EOF]
