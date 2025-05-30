@@ -263,4 +263,38 @@ Think a box of eggs or a car parking lot
 - If a tuple contains only a single element, that element must be followed by a comma.
 - Tuples are similar to lists, but once a tuple is created its contents cannot be changed.
 - While tuples cannot be changed once created, new tuples can be created or an existing tuple can have its value re-assigned using the assignment operator. Effectively completely replacing the tuple.
+
+- There are several built-in Python functions that can be applied to tuples.
+- Note that unlike lists these are functions, not methods as they are not built into the tuple type, and are not called using dot notation.
+-The functions listed below can also be applied to lists:
+- len(): returns the number of elements in the Tuple/List
+- max(): finds and returns the largest numeric element in the Tuple/List
+- min(): finds and returns the smallest numeric elements in the Tuple/List
+- sum(): calculates the sum of all elements in the Tuple/List
+- sorted(): returns a new list containing all the elements of the Tuple/List in sorted order
+- tuple(): returns a Tuple containing the elements from the iterable item (String/List)/Tuple/etc)
+
+## TUPLES - LEN()
+
+- The len() function returns the number of elements in a tuple.
+
+## TUPLES - MAX()
+
+- The max() function returns the element with the highest value in a tuple
+- All Elements need to be numeric to work
+
+## TUPLES - MIN()
+
+- The min() function returns the element with the lowest value in a tuple ends are numeric
+
+## TUPLES - SUM()
+
+- The sum() function returns the sum of all elements in a tuple
+- All Elements need to be numeric to work
+
+## TUPLES - SORTED()
+
+- The sorted() function returns a new list containing the elements of the origin tuple in ascending order.
+- The original tuple's elements need to gbe of the same data type
+
 [EOF]
