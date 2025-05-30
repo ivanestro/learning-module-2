@@ -222,6 +222,7 @@ daily_step_count.reverse()
 print(daily_step_count)
 # outputs: [5921, 10931, 7029, 9385, 10343]
 
+## SLICING
 red_river = ['R', 'R', 'C', ' ', 'P', 'o', 'l','y','t','e','c','h','n','i','c']
 
 print(red_river[2: 12: 2]) # from 2 to 12, stepping by 2
@@ -240,6 +241,7 @@ print(red_river[::5]) # from start (0) to end (14), stepping by 3
 print(red_river[-1: -5: -1]) # from last (14) to 5tth last, stepping backwards by 1
 # output: ['c','i','n','h']
 
+## TUPLES
 provinces_and_territories = ('BC', 'AB', 'MB', 'SK')
 tuple_without_parenthesis = 6, 5, 3
 print(type(provinces_and_territories))  # <class 'tuple'>
@@ -253,8 +255,8 @@ manitoba = provinces_and_territories[3]
 
 print(manitoba)  # output: MB
 
-#The following line of code causes an exception:Tuple 
-# elements cannot be modified 
+#The following line of code causes an exception:Tuple
+# elements cannot be modified
 provinces_and_territories[3] = "Manitoba"
 
 # use assignment to modify tuple:
@@ -262,18 +264,145 @@ provinces_and_territories = ('BC', 'AB', 'MB', 'SK')
 
 random_tuple = (1, 66, 3, 7, 42, 78, 12, 55)
 
+## TUPLES - LENGTH()
 length = len(random_tuple)
 print(length) # output: 8
 
+## TUPLES - MAX()
 max = max(random_tuple)
 print(max)  # output: 78
 
+## TUPLES- MIN()
 min = min(random_tuple)
 print(min) # output: 1
 
+## TUPLES SUM()
 sum = sum(random_tuple)
 print(sum)  # output: 264
 
+## TUPLES - SORTED()
 sorted_tuple = sorted(random_tuple)
 print(sorted_tuple)  # output: [1, 3, 7, 12, 42, 55, 66, 78]
 # output: [1, 3, 7, 12, 42, 55, 66, 78]
+
+## TUPLES - TUPLE()
+name = "Ivan"
+tuple_name = tuple(name)
+print(tuple_name)
+# output: ('I', 'v', 'a', 'n')
+
+list_of_numbers = [1,2,3]
+tuple_of_numbers = tuple(list_of_numbers)
+print(tuple_of_numbers) 
+# output: (1, 2, 3)
+
+## DICTIONARIES
+# Examples of Dictionaries in action:
+fruit_inventory = {'apples': 23, 'oranges': 10, 'bananas': 59}
+
+value = fruit_inventory['oranges']
+print(value) # output: 10
+
+fruit_inventory['oranges'] = 25
+print(fruit_inventory['oranges']) # output: 25
+
+fruit_inventory['plums'] = 100 # adding a new key-value pair
+
+
+print(fruit_inventory)
+# output: {'apples': 23, 'oranges': 25, 'bananas': 59}
+
+## DICTIONARIES - KEYS()
+car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+
+x = car.keys()
+car["color"] = "white"
+
+print(x)
+# output: dict_keys(['brand', 'model', 'year', 'color'])
+
+## DICTIONARIES - VALUES()
+
+car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+
+x = car.values()
+car["year"] = 2018
+print(x)
+# output: dict_values(['Ford', 'Mustang', 2018])
+
+## DICTIONARIES - ITEMS()
+car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+x = car.items() 
+car["year"] = 2018
+print(x)
+# output: dict_items([('brand', 'Ford'),('model', 'Mustang'), ('year', 2018)])
+
+## DICTIONARIES - GET()
+print(fruit_inventory.get('apples'))  # output: 23
+
+print(fruit_inventory.get('pears', 'Fruit is not in dictionary')) # output: Fruit is not in dictionary
+
+print(fruit_inventory.get('pears'))
+# output: None (no default value provided)
+
+## DICTIONARIES - POP()
+fruit_inventory.pop('oranges')
+print(fruit_inventory)
+# output: {'apples': 23, 'bananas': 59}
+
+## DICTIONARIES - CLEAR()
+fruit_inventory.clear() 
+print(fruit_inventory)
+# output: {}
+
+## SETS 
+primes = {2, 3, 5, 7, 11, 13, 17, 19, 23}
+fives = set()
+
+## SETS - ADD() 
+primes.add(29)
+fives.add(5)
+
+print(primes)  # output: {2, 3, 5, 7, 11, 13, 17, 19, 23, 29}
+print(fives)  # output: {5}
+
+## SETS - REMOVE()
+primes.remove(3)
+print(primes) # output: {2, 5, 7, 11, 13, 17, 19, 23, 29}
+
+primes.remove(22) # This will raise a KeyError since 22 is not in the set
+
+## SETS - DISCARD()
+primes.discard(2)
+print(primes)  # output: {5, 7, 11, 13, 17, 19, 23, 29}
+
+primes.discard(22) # No exception occurs
+
+## SETS - UNION()
+union = primes.union(fives)
+print(union)  # output: {2, 5, 7, 11, 13, 17, 19, 23, 29}
+
+## SETS - DIFFERENCE()
+difference = prime.difference(fives)
+print(difference) # output: {2, 7, 11, 13, 17, 19, 23, 29}
+
+difference = fives.difference(primes)
+print(difference) 
+# output: {35, 10, 15, 20 ,25 ,30}
+
+## SETS - INTERSECTION()
+intersection = primes.intersection(fives)
+print(intersection) # output: {5}
+
