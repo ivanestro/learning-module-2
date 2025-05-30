@@ -240,20 +240,40 @@ print(red_river[::5]) # from start (0) to end (14), stepping by 3
 print(red_river[-1: -5: -1]) # from last (14) to 5tth last, stepping backwards by 1
 # output: ['c','i','n','h']
 
-## TUPLES
+provinces_and_territories = ('BC', 'AB', 'MB', 'SK')
+tuple_without_parenthesis = 6, 5, 3
+print(type(provinces_and_territories))  # <class 'tuple'>
+print(type(tuple_without_parenthesis))  # <class 'tuple'>
+
+single_tuple = ('one_item', )
+another_single = 77,
+
 provinces_and_territories = ('BC', 'AB', 'MB', 'SK')
 manitoba = provinces_and_territories[3]
 
-print(manitoba)
-# output MB
+print(manitoba)  # output: MB
 
-# The following line of code causes an exception: Tuple
-# Elements cannot be modified
-provinces_and_territories[3] = 'Manitoba'
-tuple_without_parenthesis = 6 , 5, 3 
-print(type(provinces_and_territories))
-print(type(tuple_without_parenthesis))
+#The following line of code causes an exception:Tuple 
+# elements cannot be modified 
+provinces_and_territories[3] = "Manitoba"
 
-single_tuple = ('one_item', )
-another_singe = 77,
+# use assignment to modify tuple:
+provinces_and_territories = ('BC', 'AB', 'MB', 'SK')
 
+random_tuple = (1, 66, 3, 7, 42, 78, 12, 55)
+
+length = len(random_tuple)
+print(length) # output: 8
+
+max = max(random_tuple)
+print(max)  # output: 78
+
+min = min(random_tuple)
+print(min) # output: 1
+
+sum = sum(random_tuple)
+print(sum)  # output: 264
+
+sorted_tuple = sorted(random_tuple)
+print(sorted_tuple)  # output: [1, 3, 7, 12, 42, 55, 66, 78]
+# output: [1, 3, 7, 12, 42, 55, 66, 78]
