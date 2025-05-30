@@ -297,4 +297,101 @@ Think a box of eggs or a car parking lot
 - The sorted() function returns a new list containing the elements of the origin tuple in ascending order.
 - The original tuple's elements need to gbe of the same data type
 
+## TUPLES - TUPLE()
+
+- The tuple() function converts any iterable type to a tuple.
+- An iterable type is a data type that contains elements that can be traversed through using a loop
+- Loops will be covered in a later module.
+- Iterable types in python include strings as well as all of the collection types.
+
+## DICTIONARIES
+
+- A dictionary is an unordered collection of key-value pairs.
+- Like regular dictionaries, the word is the key and the definition is the value
+- Each Key in a dictionary must be unique and immutable (e.g. a string, integer and or tuple) and each key is associated with a value.
+- You can think of a dictionary as  a kind of lookup table, where you can quickly retrieve a value associated with a particular key.
+- Dictionaries are created using curly braces{} and colons to separate the keys and values with commas separating each key-value pair.
+- There are several methods built-in to the dictionary data type.
+- As they are built into the Dictionary type, they are called using dot notation.
+- keys(): returns a 'view' List object of the keys in the dictionary
+- values(): returns a 'view' List object of the values in the dictionary
+- items(): returns a 'view' List object containing Tuples of the key-value pairs in the dictionary
+- get(): returns the value associated with the key argument, or the specified default value
+- pop(): removes the key-value pair based on the key argument from the dictionary
+- clear(): empties the dictionary, removing all of its elements
+
+- Note: 'view' objects cannot be assigned new values but will update if the Dictionary is updated.
+
+## DICTIONARIES - KEYS()
+
+- The key() method returns a view List object of the keys in the dictionary
+- Note: 'view' objects cannot be assigned new values, but will update if the Dictionary is updated
+
+## DICTIONARIES - VALUES()
+
+- The values() method returns a view List object of the values in the dictionary
+- Note: 'view' objects cannot be assigned new values, but will update if the dictionary is updated
+
+## DICTIONARIES - ITEMS()
+
+- The items() method returns a view List containing Tuples of the key-value paris in the dictionary
+-Note: 'view' objects cannot be assigned new values, but will update if the Dictionary is updated
+
+## DICTIONARIES - GET()
+
+- The get() method returns the value of the key argument, or the specified default value
+- If there is no default value, and the value does not exist in the dictionary, null [None] will be returned
+
+## DICTIONARIES - POP()
+
+- The pop() method returns the value of the key argument and removes it from the dictionary
+- If there is no default value, and the value does not exist in the dictionary, an error will occur
+
+## DICTIONARIES - CLEAR()
+
+- The clear() function empties the dictionary, removing all of its elements
+
+## SETS
+
+- A set is an unordered collection of unique elements
+- It is similar to a list or a tuple, but unlike those data types a set cannot contain duplicate values
+- Sets are mutable meaning you can add or remove elements from them after they have been created
+- To create a set in python you can use curly braces{} or the built in set() function
+-Note: an empty set of curly braces in python will be considered a dictionary
+- If an Empty set is to be created the set() function must be used
+- Unlike the other collection types, set values cannot be accessed using indexing.
+- Instead methods of the set data type must be used when working with sets
+- There are several methods built-in to the set data type
+- add(): adds an element to a set
+- remove(): removes an element to a set, exception if the element does not exist
+- discard(): removes ane element to a set if the element does not exist statement is ignored
+- union(): returns a new set containing all unique elements from both the set object and the parameter set
+- difference(): returns a new set containing all elements in the set object that are different from those elements in the set parameter
+- intersection(): returns a new set containing all elements common from the set object the set parameter.
+
+## SETS - ADD()
+
+- The add() method inserts and element into a set
+
+## SETS - REMOVE()
+
+- The remove() method removes an element from a set, if it exists
+- If the element does not exist an exception occurs
+
+## SETS - DISCORD()
+
+- The discard() method removes an element from a set, if it exists
+- If the element does not exist statement is ignored
+
+## SETS - UNION()
+
+- The union() method returns a new set containing all unique elements from both the set object and parameter set
+
+## SETS- DIFFERENCE()
+
+- The union() method returns a new set containing all elements in the set object that are different from those elements in the set parameter
+
+## SETS - INTERSECTION()
+
+- The intersection() method returns a new set containing all elements common from the set object the set parameter
 [EOF]
