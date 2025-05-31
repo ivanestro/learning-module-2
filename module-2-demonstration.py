@@ -395,7 +395,7 @@ union = primes.union(fives)
 print(union)  # output: {2, 5, 7, 11, 13, 17, 19, 23, 29}
 
 ## SETS - DIFFERENCE()
-difference = prime.difference(fives)
+difference = primes.difference(fives)
 print(difference) # output: {2, 7, 11, 13, 17, 19, 23, 29}
 
 difference = fives.difference(primes)
@@ -405,4 +405,3 @@ print(difference)
 ## SETS - INTERSECTION()
 intersection = primes.intersection(fives)
 print(intersection) # output: {5}
-
